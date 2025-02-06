@@ -1,0 +1,6 @@
+Invoice Date,Invoice Number,Qtr,Year,Customer Name,Total Amount,Tax Amount,Net Amount
+2024-01-15,inv1001,1,2024,John Doe,1200.50,12.5,1187.50
+2024-02-20,inv1002,1,2024,Jane Smith,2300.75,10.0,2290.75
+2024-03-18,inv1003,1,2024,Michael Johnson,1750.30,8.5,1741.80
+2024-04-25,inv1004,2,2024,Emily Davis,980.00,15.0,965.00
+2024-05-10,inv1005,2,2024,William Brown,4500.25,5.0,4495.25
