@@ -1,4 +1,4 @@
-package QuestionBank;
+package QuestionBank.Conditional_And_Loops;
 
 class First {
     public static void main(String[] args) {
