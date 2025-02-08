@@ -1,0 +1,6 @@
+employeeId,name,department,salary,bonusPercentage,totalEarnings
+E001,John Doe,Sales,55000,10,60500
+E002,Jane Smith,Marketing,62000,12,69440
+E003,Mark Brown,IT,72000,8,77760
+E004,Lisa White,HR,50000,15,57500
+E005,Tom Black,Finance,68000,10,74800
