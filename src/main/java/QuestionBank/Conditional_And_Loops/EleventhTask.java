@@ -2,6 +2,11 @@ package QuestionBank.Conditional_And_Loops;
 
 import java.util.Scanner;
 
+/*
+Write a program that will continuously ask users to enter numbers.
+Once user types “done”, the program should stop asking for more numbers and display the sum of all the numbers that user entered.
+ */
+
 class EleventhTask {
     public static void main(String[] args) {
 
