@@ -1,0 +1,20 @@
+Classes are for the programmer a way to clarify problematic concepts.
+With each class we create, we add new functionality to the programming language.
+The functionality is needed to solve the problems we meet, and the solutions are born from the interaction among the objects we create.
+In object oriented programming, an object is an independent unity which can change through its methods.
+Objects are used together with each other; each object has its own area of responsibility.
+
+
+Each Java's class descends from the class Object, which means that each class we create has all methods which are defined in Object.
+If we want to change the functionality of the methods defined in Object, we have to Override them and define a new functionality in the created class.
+In addition to be possible to inherit the Object class, it is also possible to inherit other classes.
+ArrayList inherits the class AbstractList. The class AbstractList inherits the class AbstractCollection, which descended from the class Object.
+
+
+Each class can inherit one class, directly, Indirectly, a class can still inherit all the features its parent class.
+The class ArrayList inherits directly the class AbstractList, and indirectly the classes AbstractCollection and Object.
+ In fact, the class ArrayList has the methods and interfaces of AbstractList, AbstractCollection and Object at its disposal.
+The class features are inherited using the keyword extends.
+The class which inherits is called subclass; the class which is inherited is called superclass.
+
+
