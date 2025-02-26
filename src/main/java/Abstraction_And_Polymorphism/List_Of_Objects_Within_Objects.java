@@ -19,20 +19,19 @@ class FootballClub {
     public void setName(String name) {
         this.name = name;
     }
-
     public int getYearOfFoundation() {
         return yearOfFoundation;
     }
     public void setYearOfFoundation(int yearOfFoundation) {
         this.yearOfFoundation = yearOfFoundation;
     }
-
     public ArrayList<Person> getPlayers() {
         return players;
     }
     public void setPlayers(ArrayList<Person> players) {
         this.players = players;
     }
+
 
     public boolean isAcceptedAsPlayer(Person player) {
         return player.getAge() > 18;

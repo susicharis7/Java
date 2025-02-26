@@ -19,19 +19,20 @@ class Osoba {
         this.height = 0;
     }
 
-    public void becomeOlder() {
-        this.age = this.age + 1;
-    }
-    public void becomeOlder(int years) {
-        this.age += years;
-    }
-
     public String getName() {
         return this.name;
     }
-
     public int getAge() {
         return this.age;
+    }
+
+
+    public void becomeOlder() {
+        this.age = this.age + 1;
+    }
+
+    public void becomeOlder(int years) {
+        this.age += years;
     }
 
     public String toString() {
