@@ -1,0 +1,24 @@
+We have run into situations where variables had various different types, in addition to their own.
+For instance, all objects are Object-type. If an object is a particular type, we can also represent it as Object-type.
+All objects are Object-type
+
+Polymorphism means many shapes and it is one of 4 most important principles of OOP
+Class can do the same thing in different ways.
+There are two types of polymorphism in Java:
+Compile time polymorphism - method overloading - which method to call is decided by the compiler
+Run time polymorphism - method overriding - which method to call is decided by the JVM in the run time
+
+Variables have got their own type, and in addition to it they also have got the type of their parent classes and interfaces.
+The class String derives from the Object class, and therefore String objects are also Object-type.
+The class Object does not derive from the class String, and therefore Object variables are not automatically String-type.
+
+The inheritance hierarchy lists the classes from which a class derives.
+The inherited classes are listed in hierarchical order, where the class we are analyzing is the last one.
+In Java, each class can derive from one class, tops; however, they can inherit features of more than one, indirectly.
+
+The fact that all objects are Object-type helps programming.
+If we only need the features defined in the Object class in our method, we can use Object as method parameter.
+Because all objects are also Object-type, a method can be given whatever object as parameter.
+
+
+
