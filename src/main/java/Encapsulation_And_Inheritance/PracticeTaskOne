@@ -1,0 +1,40 @@
+a) Create the package people and the class Person in it; Person works in relation to the following main program:
+public static void main(String[] args) {
+   Person pekka = new Person("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa");
+   Person esko = new Person("Esko Ukkonen", "Mannerheimintie Street 15 00100 Helsinki");
+   System.out.println(pekka);
+   System.out.println(esko);
+}
+
+
+b) Create the class Student which inherits the class Person. Students have 0 credits, at the beginning. As long as a student studies, their credits grow. Create the class, in relation to the following main program:
+public static void main(String[] args) {
+   Student olli = new Student("Olli", "Ida Albergintie Street 1 00400 Helsinki");
+   System.out.println(olli);
+   System.out.println("credits " + olli.credits());
+   olli.study();
+   System.out.println("credits "+ olli.credits());
+}
+
+c) Create the class Teacher in the same package. Teacher inherits Person, but they also have a salary, which together with the teacher information is printed  in String form.
+Check whether the following main program generates the printout below:
+
+
+public static void main(String[] args) {
+   Teacher pekka = new Teacher("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa", 1200);
+   Teacher esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 Street 00100 Helsinki", 5400);
+   System.out.println( pekka );
+   System.out.println( esko );
+}
+
+d) Implement the method public static void printDepartment(List<Person> people) in the Main class, default package. The method prints all the people in the parameter list. When the main method is called, printDepartment should work in the following way.
+public static void printDepartment(List<Person> people) {
+   // we print all the people in the department
+}
+public static void main(String[] args) {
+   List<Person> people = new ArrayList<Person>();
+   people.add( new Teacher("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa", 1200) );
+   people.add( new Student("Olli", "Ida Albergintie Street 1 00400 Helsinki") );
+   printDepartment(people);
+}
+
