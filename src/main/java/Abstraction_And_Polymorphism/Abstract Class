@@ -1,0 +1,30 @@
+Abstract classes combine interfaces and inheritance.
+They do not produce instances, but you can create instances of their subclasses.
+An abstract class can contain both normal and abstract methods, the first containing the method body, the second having only the method definition.
+The implementation of the abstract methods is left to the inheriting class.
+In general, we use abstract classes when the object they represent is not a clear, self-defined concept.
+In such cases, it is not possible to create instances of it.
+
+Both when we define abstract classes and abstract methods, we use the keyword abstract.
+An abstract class is defined by the statement public abstract class ClassName, whereas an abstract method is defined by public abstract returnType methodName.
+
+The difference between interfaces and abstract classes is that abstract classes provide the program with more structure.
+Because it is possible to define the functionality of abstract classes, we can use them to define the default implementation, for instance.
+The user interface above made use of a definition of the abstract class to store the operation name.
+
+Abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved with either abstract classes or interfaces
+So any class implementing them has to have the declared methods
+Difference between two of these are:
+You can implement as many interfaces as you want in Java, but you can only extend 1 class
+ Any field declared in the interface will be both, static and final.
+ This means that every object will have the same value for an attribute in an interface.
+ In that sense, having the fields in an interface, in most cases makes no sense.
+ That is why, the abstract classes are better for these kind of problems
+
+WE WILL USE THE ABSTRACT CLASS IF WE HAVE A LOT OF CLOSELY RELATED CLASSES THAT WE WANT TO HAVE THE SAME FUNCTIONALITY AND THE SAME TYPES OF FIELDS
+WE MIGHT USE THE INTERFACE IF WE HAVE A LOT OF UNRELATED CLASSES THAT WE ALL WANT TO BE ABLE TO DO A CERTAIN THING.
+SO OTHER TYPES OF CLASSES THAT HAVE TO HAVE CERTAIN FUNCTIONALITY AS THEY ALL WILL HAVE THAT ABILITY BUT THEY ARE TOTALLY NOT RELATED CLASSES.
+
+
+
+
