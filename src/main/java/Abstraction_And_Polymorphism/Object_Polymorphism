@@ -18,7 +18,7 @@ In Java, each class can derive from one class, tops; however, they can inherit f
 
 The fact that all objects are Object-type helps programming.
 If we only need the features defined in the Object class in our method, we can use Object as method parameter.
-Because all objects are also Object-type, a method can be given whatever object as parameter.
+Because all objects are also Object-type, a method can be given whatever object as parameter...
 
 
 
