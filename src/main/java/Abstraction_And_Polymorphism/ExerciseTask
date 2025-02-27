@@ -1,0 +1,33 @@
+** This is a task from lab sessions from my University **
+
+Create an abstract class named Vehicle. This class should represent a generic vehicle and contain the following properties:
+modelName: a String representing the name of the vehicle model.
+mileage: an int representing the current mileage of the vehicle.
+health: an int (0–100) representing the vehicle’s current health status, where 100 indicates perfect condition and 0 indicates the need for major repairs.
+Implement two constructors for the Vehicle class. The first constructor should initialize only the modelName, setting default values for mileage (0) and health (100). The second constructor should initialize modelName, mileage, and health with specific values.
+Provide a getModelName() method to return the vehicle’s model name, a getMileage() method to return its mileage, and a getHealth() method to return its health. Add an abstract method service() that returns a String, representing the specific service procedure for each type of vehicle. This method will be implemented in subclasses to provide a unique service procedure.
+Define another abstract method expectedLifespan() that returns an int representing the typical lifespan of the vehicle in miles. Each subclass will implement this differently based on the specific type of vehicle.
+Add a method needsMaintenance() that returns boolean, indicating if the vehicle’s health is below 70. Also, add a method calculateRemainingLifespan() that returns an int representing the estimated remaining mileage, factoring in both the mileage and the health condition. For instance, if the health is below 50, reduce the expected lifespan proportionally.
+Define an interface called Repairable, representing vehicles that can be repaired. This interface should contain a method repair() that returns a String, describing the repair performed on the vehicle.
+Create a class named Car that extends the Vehicle class and implements the Repairable interface. Provide two constructors: one that initializes only the modelName (using the first Vehicle constructor) and another that initializes modelName, mileage, and health (using the second Vehicle constructor).
+Implement the repair() method so that it returns a message indicating the specific repairs done (e.g., "Engine tuned and oil changed for " + modelName). Implement the service() method to provide a service procedure unique to cars, such as checking engine and changing oil, and include modelName, mileage, and health. Define the expectedLifespan() method to return a typical lifespan for a car, such as 150,000 miles.
+Add a method drive(int miles) to simulate driving the car. Each time the car is driven, its mileage should increase by the given number of miles, and its health should decrease slightly. If the health drops below 30, reduce the expected lifespan by an additional 10,000 miles.
+Create a class named Truck that also extends the Vehicle class and implements the Repairable interface. Like Car, provide two constructors: one that initializes only the modelName, and another that initializes modelName, mileage, and health.
+Implement the repair() method to return a message specific to trucks (e.g., "Engine overhauled and tires replaced for " + modelName). Implement the service() method to describe a general service procedure for trucks, including the model name, mileage, and health. Define the expectedLifespan() method to return a typical lifespan for a truck, such as 300,000 miles.
+Add a method haul(int loadWeight) that simulates hauling a heavy load. If the load weight exceeds 5,000 pounds, decrease the health by a greater amount due to the extra strain. If the health is low after hauling, reduce the remaining lifespan by 20,000 miles.
+Create a class named Motorcycle that extends the Vehicle class but does not implement Repairable. As with the other vehicle classes, provide two constructors: one that initializes only modelName and another that initializes modelName, mileage, and health.
+Implement the service() method to return a unique service procedure for motorcycles, such as lubricating the chain and tuning the engine, and include modelName, mileage, and health. Define the expectedLifespan() method to return a typical lifespan for a motorcycle, such as 50,000 miles.
+Add a method race(int raceMiles) to simulate a racing event. Each time the motorcycle races, the mileage increases by the specified number of miles, and health decreases by a significant amount. If health falls below 40, reduce the remaining lifespan by 5,000 miles due to the increased strain from racing.
+In the Vehicle class, add a method simulateYear() that simulates the passage of one year for each vehicle. This method should:
+Decrease health slightly with increased mileage. For example, if the vehicle has exceeded half its expected lifespan, reduce health by 5 points each year.
+Adjust the remaining lifespan based on current health and mileage.
+In the main application, create an array or list of Vehicle references that holds instances of Car, Truck, and Motorcycle. Store these instances as Vehicle references to demonstrate upcasting.
+Loop through the array, calling service() and simulateYear() on each vehicle to observe polymorphic behavior. For each Vehicle object in the array, use instanceof to check its actual type (i.e., whether it’s a Car, Truck, or Motorcycle). Then, downcast it to the specific subclass and perform an action unique to that type:
+If the object is a Car, cast it to Car and call drive() with a specified mileage.
+If the object is a Truck, cast it to Truck and call haul() with a load weight.
+If the object is a Motorcycle, cast it to Motorcycle and call race() with a specified number of miles.
+Add a method performMaintenance(Vehicle vehicle) in the Vehicle class. This method should accept a Vehicle object, determine its actual type using instanceof, and downcast it to the appropriate subclass:
+If the Vehicle is a Car, cast it to Car and call repair() and drive() with a mileage value.
+If the Vehicle is a Truck, cast it to Truck and call repair() and haul() with a load weight.
+If the Vehicle is a Motorcycle, cast it to Motorcycle and call race().
+Optionally, prompt the user to select a vehicle from the list and perform maintenance using this method.
