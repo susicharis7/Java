@@ -1,0 +1,20 @@
+All object state-handling methods should be defined as normal object methods.
+For example, all of the methods of the Person, MyDate, Clock, Team, ... classes we defined
+during the previous weeks should be defined as normal object methods, not as statics.
+The static or non-static nature of a variable or of a method depends on their scope.
+Static methods are always related to their class, whereas non-static methods can modify the variables of the object itself.
+
+The methods which receive the definition static are not related to objects but to classes.
+It is possible to define class-specific variables by adding the word static to their name.
+For instance, Integer.MAX_VALUE, Long.MIN_VALUE and Double.MAX_VALUE are all static variables.
+Static methods are called via their class name, for instance ClassName.variable or ClassName.method().
+
+We call class library a class which contains common-use methods and variables.
+For instance, Java Math class is a class library. It provides the Math.PI variable, inter alia.
+
+The keyword final in the variable definition tells that once we assign a value to a variable, we can not assign a new one to it.
+Final-type variables are constant, and they always have to have a value.
+For instance, the class variable which tells the greatest integer, Integer.MAX_VALUE, is a constant class variable.
+Note the naming convention!
+All constants, i.e. all variable which are provided with the definition final, are written with CAPITAL_LETTERS_AND_UNDERLINE_CHARACTERS.
+
