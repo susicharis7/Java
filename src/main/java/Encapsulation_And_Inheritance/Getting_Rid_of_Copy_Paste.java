@@ -7,7 +7,7 @@ import java.util.List;
 What could be called the Original sin of a programmer is to create copy-paste code.
 This means using the same code in multiple places by copy-pasting it around the source code.
 In our example, the printing of the list is done twice.
-The code that handles the printing part should be separated as its own method.
+The code that handles the printing part should be separated as its own method...
 */
 
 class NoMoreCopyPaste {
