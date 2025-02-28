@@ -4,7 +4,7 @@ We defined that all instances created from the Person class have a name and an a
 Defining attributes is done in a quite similar fashion as with normal variables.
 In this case though, there is the keyword private in front.
 This keyword means that name and age will not show outside of the object, but are instead hidden within it.
-HIDING THINGS WITHIN AN OBJECT IS CALLED ENCAPSULATION.
+HIDING THINGS WITHIN AN OBJECT IS CALLED ENCAPSULATION...
 */
 class Person {
     private String name;
