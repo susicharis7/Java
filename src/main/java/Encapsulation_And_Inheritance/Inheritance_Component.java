@@ -43,7 +43,7 @@ class Component {
 
 
     public static void main(String[] args) {
-        Component component = new Component("414", "BMW", "Best Ever");
+        Component component = new Component("414", "BMW", "Best Car Ever");
         Motor motor = component.new Motor("414", "BMW", "Best Ever", "Benzinac");
         System.out.println(motor.getMotorType());
     }
