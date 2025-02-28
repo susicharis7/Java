@@ -10,7 +10,7 @@ class IndentAndFormattingProblems {
         numbers.add(7);
         numbers.add(3);
 
-        System.out.println("The numbers in the beginning: ");
+        System.out.println("The numbers in the beginning:");
 
         // here we print numbers
         for(int number : numbers) {
