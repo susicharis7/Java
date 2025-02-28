@@ -17,7 +17,7 @@ class SlicingSeperateTasksIntoMethods {
         numList.add(4);
         numList.add(3);
 
-        System.out.println("Numbers in the beginning: ");
+        System.out.println("Numbers in the beginning:");
         print(numList);
 
         remove(numList,3);
