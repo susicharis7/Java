@@ -1,4 +1,4 @@
-package Interface;
+package Interfaces;
 
 // An interface serves as a contract that defines method signatures, which must be implemented by any class that implement the interface.
 

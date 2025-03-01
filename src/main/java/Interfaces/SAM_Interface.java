@@ -1,4 +1,4 @@
-package Interface;
+package Interfaces;
 
 // An interface with a single abstract method is called a functional interface or a Single Abstract Method interface (SAM)
 
