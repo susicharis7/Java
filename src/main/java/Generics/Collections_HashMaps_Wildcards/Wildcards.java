@@ -1,11 +1,10 @@
-package Generics;
+package Generics.Collections_HashMaps_Wildcards;
 
 // What if we want to create a method that can accept the List of any kind of objects and prints that List
 
 import java.util.List;
 
 import java.util.Arrays;
-import java.util.List;
 
 class AnimalSecond {
     private String name;

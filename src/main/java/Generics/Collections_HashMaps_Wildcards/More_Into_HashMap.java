@@ -1,4 +1,4 @@
-package Generics;
+package Generics.Collections_HashMaps_Wildcards;
 
 import java.util.HashMap;
 
