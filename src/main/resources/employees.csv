@@ -1,0 +1,11 @@
+NAME,POSITION,STARTDATE,HOURLYRATE,JOBTYPE,HOURSWORKED,SALARY
+John Doe,Software Engineer,2018,,FULL_TIME,160,7500
+Jane Smith,Data Analyst,2020,38.0,PART_TIME,100,4000
+Alice Johnson,Project Manager,2015,55.0,,170,9000
+Bob Brown,System Administrator,2019,42.0,CONTRACTOR,140,6800
+Charlie White,Intern,2023,15.5,INTERN,80,1200
+Daniel Green,UI/UX Designer,2021,40.0,FULL_TIME,155,7200
+Emma Wilson,Marketing Specialist,2017,35.0,PART_TIME,90,3500
+Frank Thomas,Database Administrator,2016,50.0,FULL_TIME,165,8800
+Grace Miller,HR Coordinator,2018,30.0,PART_TIME,95,3200
+Henry Scott,Network Engineer,2019,48.5,FULL_TIME,160,8000

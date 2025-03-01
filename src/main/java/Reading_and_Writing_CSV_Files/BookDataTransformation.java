@@ -61,6 +61,8 @@ class Book {
         this.costPrice = builder.costPrice;
     }
 
+
+
     static class BookBuilder {
         private Date date;
         private String quarter;

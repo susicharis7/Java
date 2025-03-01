@@ -1,0 +1,11 @@
+studentId;fullName;major;averageGrade;attendancePercentage;finalScore
+S001;Alice Johnson;ENGINEERING;;90;87
+S002;Bob Smith;MEDICINE;3.6;85;82
+S003;Charlie Brown;;3.2;88;79
+S004;David Lee;BUSINESS;3.9;92;91
+S005;Eva Green;ARTS;3.5;80;75
+S006;Frank White;;3.7;89;85
+S007;Grace Black;MEDICINE;3.4;87;80
+S008;Henry Adams;LAW;3.1;85;77
+S009;Isabella Blue;BUSINESS;3.8;93;90
+S010;Jack Yellow;ARTS;3.3;82;78
