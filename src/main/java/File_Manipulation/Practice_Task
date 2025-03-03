@@ -1,0 +1,13 @@
+Implement a Java program, Events, that generates a file containing simulated events and provides functionality to read and process the events.
+The program should include the following functionalities:
+Implement a method named generateEventsFile that takes a filename and the number of records as parameters.
+This method generates a file with the specified number of event records, where each record contains:
+Timestamp: A randomly generated timestamp in the format yyyy-MM-dd HH:mm:ss.
+Event Type: Randomly selected from a predefined array of event types ({"Login", "Logout", "Purchase", "ViewPage", "Error"}).
+User ID: A random integer between 0 and 999.
+Each event should be written to the file on a new line in the following format:
+Timestamp | Event Type: <EventType> | User ID: <UserID>
+Implement a method named printEventsFromFile that takes a filename as a parameter. This method reads events from the specified file and prints each event line to the console.
+Implement a method named readEventsFromFile that takes a filename as a parameter and returns an ArrayList<String> containing all the event records from the file.
+In the main method create an instance of the Events class and call the generateEventsFile method. Call the printEventsFromFile method to display the events from the file on the console.
+Call the readEventsFromFile method to retrieve the event records.
