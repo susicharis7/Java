@@ -1,0 +1,13 @@
+Create a Java program that demonstrates the use of reflection in the context of a student grade analysis system.
+Define a Student class with attributes such as name, ID, and a list of grades. Implement a constructor to initialize these attributes and
+a method printInfo to display the student's information, including their ID, name, and grades.
+
+Additionally, define a GradeAnalyzer class that takes an array of grades in its constructor
+and provides methods for calculating the average grade (calculateAverage) and printing a summary (printSummary).
+
+In the Start class instantiate a Student object with a name, ID, and an array of grades,
+ and instantiate a GradeAnalyzer object using the same array of grades.
+Use reflection to:
+Access and print the field names and their values for both the GradeAnalyzer and Student classes.
+Iterate through the declared methods of both classes and invoke those whose names start with calculate or print.
+If the method has a non-void return type, print its result. For methods with a void return type, indicate that the method was invoked.
