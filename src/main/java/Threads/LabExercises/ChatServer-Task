@@ -1,0 +1,53 @@
+Develop a simple multi-threaded network chat application that allows multiple clients to connect to a server and exchange messages.
+The server should be capable of handling multiple clients concurrently using multi-threading. The communication between the server and clients should be implemented using sockets.
+
+Implement a server class named ChatServer and maintain a list of ClientHandler objects to manage connected clients.
+Create a method named start that takes a port number as a parameter. Inside this method:
+Create a ServerSocket on the specified port.
+Print a message indicating that the server is running.
+Enter into a loop to continuously accept incoming client connections.
+For each new connection, create a Socket object and a corresponding ClientHandler.
+Add the ClientHandler to the list and start a new thread to handle the client.
+
+Create a private method named broadcastMessage that takes a message (String) and the sender (ClientHandler) as parameters.
+Iterate through the list of clients and send the message to each client except the sender.
+
+Create a private inner class named ClientHandler that implements the Runnable interface.
+Maintain references to the client's Socket, BufferedReader, and PrintWriter. Implement a constructor to initialize these components.
+
+Implement the run method in the ClientHandler class. Inside this method:
+Read the client's username and print a message about the user joining the chat.
+Broadcast this joining message to all clients.
+Enter into a loop to continuously read messages from the client and broadcast them to others.
+Handle IOExceptions and, in the finally block, close the client's socket and remove the ClientHandler from the list.
+
+Implement a method named sendMessage in the ClientHandler class to send messages to the client.
+
+
+Now you should create a class called ChatApplication and there you should have a main method where you need to create an instance of the ChatServer class named chatServer.
+Start the server by calling the start method on chatServer with the port number.
+
+This class serves as the entry point for running the chat server. By executing the main method the instance of the ChatServer is created and the server starts listening
+for the incoming connections on the provided port.
+
+You should also implement the ChatClient class and there you need to have again the main method.
+Inside the main method you need to check if the command-line arguments include a username and server IP. If not, print a usage message and exit.
+Retrieve the username and server IP from the command-line arguments and set the server port to desired port number.
+
+Wrap the main code in a try block to catch IOExceptions.
+Create a Socket object by connecting to the specified server IP and port.
+Initialize a BufferedReader to read messages from the server and a PrintWriter to send messages to the server.
+Use the writer to send the username to the server.
+Start a new thread to continuously receive messages from the server.
+Inside the thread, create a loop to read messages from the server and print them to the console. Handle IOExceptions by printing the stack trace.
+Outside the thread, create a loop to read messages from the console and send them to the server using the writer.
+
+This ChatClient class establishes a connection to the server, sends and receives messages, and provides a basic command-line interface for the user to interact with the chat system.
+
+In order to test if your code works you need first to run ChatApplication.java
+Then you need to enable running multiple instances in intelliJ. You need to go on:
+
+run-> edit configurations -> modify options -> click on allow multiple instances -> click ok
+
+Then go on:
+run-> edit configurations -> edit configuration templates -> application -> in Program attributes paste this User 127.0.0.1 -> ok
