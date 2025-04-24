@@ -1,6 +1,6 @@
 # Welcome to my Java Learning Journey!  
 
-This repository documents my learning and practice in Java, including:  
+### This repository documents my learning and practice in Java, including:
 
 ✔️ **Fundamental concepts and logic through problem-solving**  
    - Includes exercises in **conditional statements, loops, functions, and logical thinking**  
